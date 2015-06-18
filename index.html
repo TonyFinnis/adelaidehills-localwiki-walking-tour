@@ -159,7 +159,7 @@
                 });
             };
         
-            var maps = "https://localwiki.org/api/v4/maps/?region=27&page__tags=Hahndorf,walkingtour&limit=100&format=json";
+            var maps = "https://localwiki.org/api/v4/maps/?region=27&page__tags=VictoriaStreet,walkingtour&limit=100&format=json";
             var pages = "https://localwiki.org/api/v4/pages/?region=27&tags=Hahndorf,walkingtour&limit=100&format=json";
             $.getJSON(pages).done(function(pageData){
                 $.getJSON(maps).done(function(mapData){ 
