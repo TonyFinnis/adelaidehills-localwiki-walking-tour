@@ -1,7 +1,7 @@
 hrva-wiki-walking-tour
 ======================
 
-### [Demo](http://bschoenfeld.github.io/hrva-wiki-walking-tour/)
+### [Demo](http://tonyfinnis.github.io/hrva-wiki-walking-tour/)
 
 Web based walking tour app that uses localwiki API for data
 
