@@ -77,7 +77,8 @@
             
             var locateUser = function(onLocated) {
         	    var onSuccess = function(position) {
-        	        onLocated(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        	        //onLocated(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
+        	        onLocated(new google.maps.LatLng(-35.028916,138.809761));
         	    };
 
         	    var onFail = function() {
