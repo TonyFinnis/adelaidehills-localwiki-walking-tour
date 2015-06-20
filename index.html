@@ -98,7 +98,7 @@
         	        var distance = google.maps.geometry.spherical.computeDistanceBetween(userLocation, spotLocation);
         	        walkingTourSpots[i]["distanceFromCurrentLocation"] = distance;
     	        }
-    	        
+    	     Where are we?   
     	        walkingTourSpots.sort(function(a,b) {
                     if (a.distanceFromCurrentLocation < b.distanceFromCurrentLocation)
                         return -1;
@@ -137,7 +137,6 @@
                         
                         var spotPoint = maps[i]["points"]["coordinates"][0];
                         var spotLocation = new google.maps.LatLng(spotPoint[1], spotPoint[0]);
-                        
                         
                         walkingTourSpots.push({
                             "page": pages[i],
