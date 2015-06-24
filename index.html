@@ -82,13 +82,13 @@
             
             var locateUser = function(onLocated) {
         	    var onSuccess = function(position) {
-        	        onLocated(new google.maps.LatLng(-35.028916,138.809761));
+        	        onLocated(new google.maps.LatLng(-35.028977,138.809797));
         	        //onLocated(new google.maps.LatLng(position.coords.latitude, position.coords.longitude));
         	   };
 
         	    var onFail = function() {
         	        //alert('Could not locate you!');
-        	        var work = new google.maps.LatLng(-35.028916,138.809761);
+        	        var work = new google.maps.LatLng(-35.028977,138.809797);
         	        onLocated(work);
         	    };
 
