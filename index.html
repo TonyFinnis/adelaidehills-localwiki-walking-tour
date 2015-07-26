@@ -167,10 +167,11 @@
         
             var maps = "https://localwiki.org/api/v4/maps/?region=27&page__tags=victoriastreet,walkingtour&limit=100&format=json";
             var pages = "https://localwiki.org/api/v4/pages/?region=27&tags=victoriastreet,walkingtour&limit=100&format=json";
-            //var pages = "https://localwiki.org/api/v4/files/?region=27&page__tags=victoriastreet,walkingtour&limit=100&format=json";
+            var files = "https://localwiki.org/api/v4/files/?region=27&page__tags=victoriastreet,walkingtour&limit=100&format=json";
             $.getJSON(pages).done(function(pageData){
-                $.getJSON(maps).done(function(mapData){ 
-                    loadApp(pageData, mapData);
+                $.getJSON(maps).done(function(mapData){
+                $.getJSON(maps).done(function(fileData){    
+                    loadApp(pageData, mapData, fileData);
                 });
             });
             
