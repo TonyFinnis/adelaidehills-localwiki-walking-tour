@@ -25,6 +25,7 @@ body {
 
 #map-canvas {
     height: 300px;
+    margin-bottom: 25px;
 }
 
 .adp > div:not(:nth-child(3)) {
